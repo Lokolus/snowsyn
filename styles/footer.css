@@ -1,0 +1,76 @@
+/* Farbvariablen */
+:root {
+    --bg: #f4f3f0;
+    --accent: #5A7F6B;
+    --accent-light: #A5C4B1;
+    --text: #333;
+    --button: #5A7F6B;
+    --button-hover: #466455;
+    --light: #ffffff;
+    --form-bg: #F3EFEA;
+}
+
+/* Footer-Bereich */
+.footer {
+    background-color: #dadada;
+    padding-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-left h2 {
+    font-size: 32px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: var(--text);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: var(--highlight);
+    text-decoration: none;
+    border-bottom: 1px solid var(--highlight);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+    color: var(--button-hover);
+    border-bottom: 1px solid var(--button-hover);
+}
+
+.highlight {
+    color: var(--highlight);
+    font-weight: bold;
+}

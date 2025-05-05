@@ -1,0 +1,117 @@
+/* Farbvariablen */
+:root {
+    --bg: #efefef;
+    --accent: #5A7F6B;
+    --accent-light: #A5C4B1;
+    --text: #333;
+    --button: #5A7F6B;
+    --button-hover: #466455;
+    --highlight: #5a7f6b;
+    --light: #ffffff;
+    --form-bg: #f4f3f0;
+}
+
+/* Buchungsbereich */
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+    padding: 80px 15%;
+    padding-top: 130px;
+}
+
+.booking-text {
+    width: 40%;
+    text-align: left;
+    padding-right: 150px;
+}
+
+.booking-text h2 {
+    font-size: 44px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.booking-text p {
+    font-size: 18px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Container für die Buchung */
+.booking-container {
+    width: 50%;
+    background-color: var(--light);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.booking-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.booking-box .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--accent-light);
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: var(--form-bg);
+}
+
+.service-details h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text);
+}
+
+.service-details p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+/* Buchungsbutton */
+.book-btn {
+    background-color: var(--button);
+    color: var(--light);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-btn:hover {
+    background-color: var(--button-hover);
+}
+
+/* Acuity Scheduling */
+.powered-by {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.acuity {
+    font-weight: bold;
+    font-style: italic;
+}

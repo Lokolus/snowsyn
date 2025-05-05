@@ -1,0 +1,116 @@
+/* Kontaktbereich */
+:root {
+    --bg: #f4f3f0;
+    --accent: #5A7F6B;
+    --accent-light: #A5C4B1;
+    --text: #333;
+    --button: #5A7F6B;
+    --button-hover: #466455;
+    --highlight: #5a7f6b;
+    --light: #ffffff;
+    --form-bg: #F3EFEA;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+    padding: 80px 15%;
+    padding-bottom: 150px;
+    margin-top: 40px;
+}
+
+.contact-text {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 150px;
+}
+
+.contact-text h2 {
+    font-size: 60px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 18px;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text);
+}
+
+.form-group span {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--accent-light);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: var(--form-bg);
+    color: var(--text);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--highlight);
+    background-color: var(--bg);
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: var(--button);
+    color: var(--light);
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: var(--button-hover);
+}

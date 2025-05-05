@@ -1,0 +1,281 @@
+/* Neue Farbpalette */
+:root {
+    --bg: #8f8f8f;
+    --accent: #5A7F6B;
+    --accent-light: #A5C4B1;
+    --text: #333;
+    --button: #5A7F6B;
+    --button-hover: #466455;
+    --highlight: #5a7f6b;
+    --light: #ffffff;
+    --form-bg: #F3EFEA;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--accent);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: var(--bg);
+}
+
+.logo {
+    font-size: 30px;
+    color: var(--accent);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    height: 780px;
+    margin: 0 auto;
+    background-image: url("/bilder/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 80%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: var(--button);
+    color: var(--light);
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+}
+
+.services .service-container .service-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.socialmedialinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.socialmedialinks .social-btn {
+    background-color: var(--button);
+    color: var(--light);
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.socialmedialinks .social-btn:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+/* ========== Responsive Styling ========== */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    /* Services */
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    /* Booking */
+    .booking {
+        flex-direction: column;
+        padding: 60px 5%;
+    }
+
+    .booking-text,
+    .booking-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Social Media */
+    .social-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-container img {
+        width: 100%;
+    }
+
+    /* Kontakt */
+    .contact {
+        flex-direction: column;
+        padding: 60px 5%;
+    }
+
+    .contact-text,
+    .contact-form {
+        width: 100%;
+    }
+
+    .name-fields {
+        flex-direction: column;
+    }
+
+    /* Über mich */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-section h1 {
+        font-size: 36px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 5%;
+    }
+
+    .footer-section,
+    .footer-left {
+        width: 100%;
+        text-align: center;
+    }
+}
+

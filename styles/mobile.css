@@ -1,0 +1,231 @@
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+        html {
+            width: 100vw;
+            overflow-x: hidden;
+        }
+        .hero,
+        .header,
+        header,
+        .hero-content,
+        nav,
+        .booking,
+        .service-container,
+        .about-section,
+        .contact,
+        .footer,
+        section {
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box;
+        }
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .btn {
+        margin-top: 15px;
+        width: 80%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+    .logo {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .services h2,
+    section h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.3;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .service-box {
+        width: 90%;
+        max-width: 400px;
+    }
+    .service-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+    .service-box h3,
+    .service-box .price,
+    .service-box p {
+        text-align: center;
+        padding: 0 10px;
+    }
+    /*booking*/
+    .booking-text {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 16px; /* leicht reduziert */
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .booking-text h2 {
+        font-size: 30px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+    .booking-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    .booking {
+        padding: 40px 0;
+    }
+    .booking-container {
+        padding: 0 12px; /* etwas mehr Freiraum links/rechts */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .booking-box {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .service-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .service-item {
+        background-color: #fff;
+        border: 1.5px solid var(--accent-light);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        width: 95%; /* kleiner als 100%, macht optisch Luft */
+        max-width: 500px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .service-details {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .book-btn {
+        display: block;
+        width: 90%; /* dezenter als 100% */
+        max-width: 260px;
+        margin: 0 auto;
+        padding: 12px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 30px;
+        background-color: var(--button);
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .book-btn:hover {
+        background-color: var(--button-hover);
+    }
+    /*Social*/
+    .social-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding: 0 16px;
+    }
+    .social-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .social-media h2 {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    /*kontakt*/
+    .contact {
+        padding: 40px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-text {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .contact-text h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .contact-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0 auto;
+    }
+    /*form*/
+    .contact-form {
+        padding: 0 20px;
+    }
+    .form-group {
+        margin-bottom: 24px;
+    }
+    .name-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 2px solid var(--accent-light);
+        box-sizing: border-box;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+    .contact-form label {
+        font-size: 16px;
+        margin-bottom: 6px;
+        display: block;
+        text-align: center;
+    }}

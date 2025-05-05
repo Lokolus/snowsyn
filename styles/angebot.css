@@ -1,0 +1,75 @@
+/* Farbvariablen */
+:root {
+    --bg: #8f8f8f;
+    --accent: #5A7F6B;
+    --accent-light: #A5C4B1;
+    --text: #333;
+    --button: #5A7F6B;
+    --button-hover: #466455;
+    --highlight: #5a7f6b;
+    --light: #ffffff;
+    --form-bg: #f4f3f0;
+}
+
+/* Dienstleistungs-Bereich */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--bg);
+    margin-top: 50px;
+}
+
+.services h2 {
+    font-size: 56px;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-weight: lighter;
+    text-align: left;
+    padding-left: 175px;
+}
+
+/* Container für die Service-Karten */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Einzelne Service-Box */
+.service-box {
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: none;
+}
+
+/* Bilder transparent halten */
+.service-box img {
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+
+/* Stil für Titel & Preis */
+.service-box h3 {
+    font-size: 20px;
+    color: var(--highlight);
+    margin: 15px 0 5px;
+}
+
+.service-box .price {
+    font-weight: bold;
+    color: var(--accent);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Beschreibungstext */
+.service-box p {
+    font-size: 14px;
+    color: var(--text);
+}

@@ -1,0 +1,68 @@
+/* Farbvariablen */
+:root {
+    --bg: #8f8f8f;
+    --accent: #5A7F6B;
+    --accent-light: #A5C4B1;
+    --text: #333;
+    --button: #5A7F6B;
+    --button-hover: #466455;
+    --highlight: #5a7f6b;
+    --light: #ffffff;
+    --form-bg: #f4f3f0;
+}
+
+/* Social Media-Bereich */
+.social-media {
+    text-align: center;
+    padding: 89px 10%;
+    padding-bottom: 92px;
+    background-color: var(--bg);
+    margin-top: 40px;
+}
+
+/* Überschrift */
+.social-media h2 {
+    font-size: 56px;
+    color: var(--accent);
+    margin-bottom: 40px;
+    font-weight: lighter;
+    text-align: left;
+    padding-left: 50px;
+}
+
+/* Bildcontainer */
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Bilder */
+.social-container img {
+    width: 25%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover-Effekt für Bilder */
+.social-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Social Media Button */
+.social-btn {
+    background-color: var(--button);
+    color: var(--light);
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover-Effekt für Button */
+.social-btn:hover {
+    background-color: var(--button-hover);
+}
